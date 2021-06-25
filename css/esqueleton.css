@@ -1,0 +1,23 @@
+.logo-sam{
+   margin-left: 5px;
+ width:60px  !important ;
+
+}
+.navbarButtons{
+    margin-top: 15px;
+    padding: 10px ;   
+    width: 130px;
+    height: 60px;
+    
+}
+.navbarButtons:hover{
+    background-color: aliceblue;
+    border-bottom: 5px solid;
+}
+.buttonLinkNav{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
