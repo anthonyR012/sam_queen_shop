@@ -1,30 +1,28 @@
-.fondo-img{
-    background-image: url(../img/fondo.jpeg) #ccc no-repeat;
-}
-.complete{
-    width: 500px;
-    height: 500px;
-}
-.logo-sam{
-   margin-left: 5px;
- width:60px  !important ;
+.buttonLinkNav-css{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+   
 
 }
-.navbarButtons{
+    .buttonLinkNav-css:hover{
+        
+        color: #F98302 ;
+        -webkit-transform: scale(1.2); 
+        transition-duration: 1.0s;
+    }
+.navbarButtons-css{
     margin-top: 15px;
     padding: 10px ;   
-    width: 130px;
+    width: 155px;
     height: 60px;
     cursor: pointer;
 }
-.navbarButtons:hover{
-    background-color: aliceblue;
+    .navbarButtons-css:hover{
+   color: white;
+    
     border-bottom: 5px solid;
-}
-.buttonLinkNav{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    }
+
