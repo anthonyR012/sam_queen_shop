@@ -1,7 +1,7 @@
 
 .fondoImg-css{
     background: url(../img/fondo.jpeg) #ccc no-repeat;
-    background-size: 100%;
+    background-size: cover;
     opacity: 70%;
     width: 100%;
     height: 450px;
