@@ -14,7 +14,10 @@
  
  
  }
-.transicionColorNav-css{
+ .transicionBeforeNav-css{
+    transition: 0.5s ease;
+ } 
+.transicionAfterNav-css{
     transition: 1.1s ease;
     opacity: 90%;
     font-size: 18px;

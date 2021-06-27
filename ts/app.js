@@ -1,5 +1,4 @@
 // variables
-var aplicationAnimacionScroll = document.querySelector("nav.navbar-expand-sm");
 // inicio app
 window.addEventListener("scroll", function () {
     var divAfer = document.querySelector(".scroll-css");
@@ -13,12 +12,14 @@ window.addEventListener("scroll", function () {
 });
 // funciones
 function changeAnimation(valorDeEntrada) {
+    var aplicationAnimacionScroll = document.querySelector("nav.navbar-expand-sm");
     if (valorDeEntrada === true) {
-        aplicationAnimacionScroll.classList.add("transicionColorNav-css");
+        aplicationAnimacionScroll.classList.add("transicionAfterNav-css");
     }
     else {
-        if (aplicationAnimacionScroll.className === "transicionColorNav-css") {
-            aplicationAnimacionScroll.remove();
+        if (aplicationAnimacionScroll.classList.contains("transicionAfterNav-css")) {
+            aplicationAnimacionScroll.classList.remove("transicionAfterNav-css");
+            aplicationAnimacionScroll.classList.add("transicionBeforeNav-css");
         }
     }
 }

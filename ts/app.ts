@@ -1,6 +1,6 @@
 
 // variables
-const aplicationAnimacionScroll : Element = document.querySelector("nav.navbar-expand-sm");
+
 
 
 
@@ -19,11 +19,16 @@ window.addEventListener("scroll" ,()=>{
 
 // funciones
     function  changeAnimation(valorDeEntrada: boolean):void {
+        const aplicationAnimacionScroll : Element = document.querySelector("nav.navbar-expand-sm");
         if(valorDeEntrada===true){
-        aplicationAnimacionScroll.classList.add("transicionColorNav-css");
+           
+        aplicationAnimacionScroll.classList.add("transicionAfterNav-css");
+
         }else{
-            if(aplicationAnimacionScroll.className==="transicionColorNav-css"){
-                aplicationAnimacionScroll.remove();
+            if(aplicationAnimacionScroll.classList.contains("transicionAfterNav-css")){
+                
+                aplicationAnimacionScroll.classList.remove("transicionAfterNav-css");
+                aplicationAnimacionScroll.classList.add("transicionBeforeNav-css");
             }
         }
         
