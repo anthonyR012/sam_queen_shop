@@ -1,0 +1,47 @@
+.buttonLinkNav-css {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  margin-top: 15px;
+  justify-content: center; }
+
+.buttonLinkNav-css:hover {
+  color: #F98302;
+  -webkit-transform: scale(1.2);
+  transition-duration: 1.0s; }
+
+.navbarButtons-css {
+  margin-top: 15px;
+  padding: 10px;
+  width: 155px;
+  height: 60px;
+  cursor: pointer; }
+
+.navbarButtons-css:hover {
+  color: white;
+  border-bottom: 5px solid; }
+
+.changeTheP-css {
+  color: white;
+  text-shadow: 5px 2px 3px black; }
+
+.fondoImg-css {
+  background: url(../../assets/img/fondo.jpeg) #ccc no-repeat;
+  background-size: cover;
+  opacity: 70%;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 25px; }
+
+.logoSam-css {
+  margin-left: 5px;
+  width: 60px  !important; }
+
+.transicionBeforeNav-css {
+  transition: 0.5s ease; }
+
+.transicionAfterNav-css {
+  transition: 1.1s ease;
+  opacity: 90%;
+  font-size: 18px;
+  background-color: #ccc !important; }
