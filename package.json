@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "npx tsc ts/app.ts",
+    "tsc": "npx tsc",
     "sass":"npx node-sass -w scss/app.scss -o build/css"
   },
   "devDependencies": {
