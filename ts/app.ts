@@ -8,7 +8,7 @@ eventListners();
 function eventListners(){
   window.addEventListener("scroll", positionScroll);
   
-  // setInterval(stateVisible,3000);
+
 
 
 
@@ -16,30 +16,8 @@ function eventListners(){
 }
   // FUNCIONES
 
-// function stateVisible(){
- 
-//   if(sentenceAround2?.classList.contains("visually-hidden") && sentenceAround3?.classList.contains("visually-hidden")){
- 
-//     sentenceAround2?.classList.remove("visually-hidden");
-//     sentenceAround1?.classList.add("visually-hidden");
-   
-   
-//   }else if(sentenceAround3?.classList.contains("visually-hidden") && sentenceAround1?.classList.contains("visually-hidden")){
-//     sentenceAround3?.classList.remove("visually-hidden");   
-//     sentenceAround2?.classList.add("visually-hidden");
-   
- 
 
-// }else if( sentenceAround1?.classList.contains("visually-hidden") && sentenceAround2?.classList.contains("visually-hidden")){
- 
-//   sentenceAround1?.classList.remove("visually-hidden");
-//   sentenceAround3?.classList.add("visually-hidden");
- 
 
-// }
-  
-  
-// }
 
 function positionScroll(){    
   const divAfer :Element|null = document.querySelector(".scroll-css");

@@ -1,0 +1,51 @@
+%category{
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 60px;
+    &:active{
+        transform: scale(0.5);
+        transition-duration: 1.0s;
+    }
+    &:hover{
+        transform: scale(1.4);
+        transition-duration: 1.0s;
+        
+        
+    }
+    &:not( :hover ){ 
+        transition-duration: 1.0s;
+     }
+    
+}
+@keyframes move {
+    0%{ margin-left: 100px;}
+  100% { margin-left: -100px;}
+}
+
+.iconSlider-css{
+    @extend %category;
+    width: 80px ;
+    height: 80px ;
+   
+    
+}
+.iconMover-css{
+    @extend %category;
+    margin-top: 80px;
+    width: 30px;
+    height: 30px;
+
+    &:not(:hover).iconMover-css{
+        &:active::after{
+            animation: move 5s 1;
+        }
+        
+    }
+   
+}
+.contentCategory-css{
+
+    width: 800px;
+    height: 150px;
+}

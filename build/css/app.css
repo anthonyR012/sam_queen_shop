@@ -1,24 +1,18 @@
-@keyframes slogan {
-  0% {
-    margin-top: 0; }
-  20% {
-    margin-top: 0; }
-  50% {
-    margin-top: -60PX; }
-  80% {
-    margin-top: -115PX; }
-  85% {
-    margin-top: -55PX; }
-  95% {
-    margin-top: -60PX; }
-  99% {
-    opacity: 50%; }
-  100% {
-    margin-top: 0; } }
+.fondoImg-css {
+  background: url(../../assets/img/fondo.jpeg) blue no-repeat;
+  background-size: cover;
+  opacity: 70%;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 25px; }
 
-@keyframes logo {
-  30% {
-    transform: scale(1.2); } }
+.transicionBeforeNav-css {
+  transition: 0.5s ease; }
+
+.transicionAfterNav-css {
+  transition: 1.1s ease;
+  font-size: 18px;
+  background-color: #ccc !important; }
 
 .buttonLinkNav-css {
   text-decoration: none;
@@ -46,13 +40,20 @@
   width: 60px  !important;
   animation: logo 4s infinite; }
 
+@keyframes logo {
+  30% {
+    transform: scale(1.2); } }
+
 .changeTheSlogan-css {
   color: white;
   text-shadow: 5px 2px 3px black;
   margin: 0;
   padding: 10px;
-  animation: slogan 7.8s infinite;
+  animation: change 7.8s infinite;
   text-align: center; }
+  @media (min-width: 1300px) {
+    .changeTheSlogan-css {
+      opacity: 0%; } }
 
 .container-css {
   overflow: hidden;
@@ -60,25 +61,98 @@
   width: 400px;
   height: 60px;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  bottom: 50%;
   margin: auto; }
+  @media (min-width: 750px) and (max-width: 1280px) {
+    .container-css {
+      bottom: 56%; } }
 
-.fondoImg-css {
-  background: url(../../assets/img/fondo.jpeg) #ccc no-repeat;
-  background-size: cover;
-  opacity: 70%;
-  width: 100%;
-  height: 450px;
-  margin-bottom: 25px; }
+@keyframes change {
+  0% {
+    margin-top: 0; }
+  20% {
+    margin-top: 0; }
+  50% {
+    margin-top: -60px; }
+  80% {
+    margin-top: -115px; }
+  85% {
+    margin-top: -55px; }
+  95% {
+    margin-top: -60px; }
+  100% {
+    margin-top: 0; } }
+  @media (min-width: 200px) and (max-width: 600px) {
+    .container-css {
+      height: 50px; }
+    @keyframes change {
+      0% {
+        margin-top: 0; }
+      20% {
+        margin-top: 0; }
+      50% {
+        margin-top: -45px; }
+      80% {
+        margin-top: -100px; }
+      85% {
+        margin-top: -50px; }
+      95% {
+        margin-top: -45px; }
+      100% {
+        margin-top: 0; } } }
+  @media (min-width: 900px) and (max-width: 1300px) {
+    .container-css {
+      width: 500px; }
+    @keyframes change {
+      0% {
+        margin-top: 0; }
+      20% {
+        margin-top: 0; }
+      50% {
+        margin-top: -62px; }
+      80% {
+        margin-top: -131px; }
+      85% {
+        margin-top: -65px; }
+      95% {
+        margin-top: -70px; }
+      100% {
+        margin-top: 0; } } }
 
-.transicionBeforeNav-css {
-  transition: 0.5s ease; }
+.iconSlider-css, .iconMover-css {
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 60px; }
+  .iconSlider-css:active, .iconMover-css:active {
+    transform: scale(0.5);
+    transition-duration: 1.0s; }
+  .iconSlider-css:hover, .iconMover-css:hover {
+    transform: scale(1.4);
+    transition-duration: 1.0s; }
+  .iconSlider-css:not(:hover), .iconMover-css:not(:hover) {
+    transition-duration: 1.0s; }
 
-.transicionAfterNav-css {
-  transition: 1.1s ease;
-  opacity: 90%;
-  font-size: 18px;
-  background-color: #ccc !important; }
+@keyframes move {
+  0% {
+    margin-left: 100px; }
+  100% {
+    margin-left: -100px; } }
+
+.iconSlider-css {
+  width: 80px;
+  height: 80px; }
+
+.iconMover-css {
+  margin-top: 80px;
+  width: 30px;
+  height: 30px; }
+  .iconMover-css:not(:hover).iconMover-css:active::after {
+    animation: move 5s 1; }
+
+.contentCategory-css {
+  width: 800px;
+  height: 150px; }
+
+body {
+  max-width: 1300px; }

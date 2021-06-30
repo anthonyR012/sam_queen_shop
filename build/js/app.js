@@ -7,21 +7,8 @@ var sentenceAround3 = document.querySelector("p.around3");
 eventListners();
 function eventListners() {
     window.addEventListener("scroll", positionScroll);
-    // setInterval(stateVisible,3000);
 }
 // FUNCIONES
-// function stateVisible(){
-//   if(sentenceAround2?.classList.contains("visually-hidden") && sentenceAround3?.classList.contains("visually-hidden")){
-//     sentenceAround2?.classList.remove("visually-hidden");
-//     sentenceAround1?.classList.add("visually-hidden");
-//   }else if(sentenceAround3?.classList.contains("visually-hidden") && sentenceAround1?.classList.contains("visually-hidden")){
-//     sentenceAround3?.classList.remove("visually-hidden");   
-//     sentenceAround2?.classList.add("visually-hidden");
-// }else if( sentenceAround1?.classList.contains("visually-hidden") && sentenceAround2?.classList.contains("visually-hidden")){
-//   sentenceAround1?.classList.remove("visually-hidden");
-//   sentenceAround3?.classList.add("visually-hidden");
-// }
-// }
 function positionScroll() {
     var divAfer = document.querySelector(".scroll-css");
     var ubication = divAfer.getBoundingClientRect();
