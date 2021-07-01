@@ -31,11 +31,12 @@ $time : 5s;
 
 .transicionBeforeNav-css{
   @include transition(0.5s, ease);
+  
 } 
 .transicionAfterNav-css{
   @include transition(1.1s,ease);
   font-size: 18px;
-  background-color: #ccc !important;
+  background-color: #02ACF9;
 }
 
 .buttonLinkNav-css{
@@ -102,6 +103,7 @@ $time : 5s;
     }
     @media (min-width :900px ) and (max-width: 1300px) {
       width: 500px;
+
       @include slogan(0,-62px,-131px,-65px,-70px);
     }
   }

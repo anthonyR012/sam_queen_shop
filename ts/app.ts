@@ -1,14 +1,13 @@
 // VARIABLES
-const sentenceAround1 = document.querySelector("p.around1");
-const sentenceAround2 = document.querySelector("p.around2");
-const sentenceAround3 = document.querySelector("p.around3");
+
+
+
 
 // INICIO
 eventListners();
 function eventListners(){
   window.addEventListener("scroll", positionScroll);
   
-
 
 
 
@@ -48,3 +47,6 @@ function  animationHeader(valorDeEntrada: boolean):void {
       
 }
   
+
+
+

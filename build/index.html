@@ -11,8 +11,8 @@
 
     <title>Sam</title>
 </head>
-<body class="">
-    
+<body>
+
 
         <!-- navbar -->
         <div class="container-fluid fondoImg-css">
@@ -27,7 +27,7 @@
                         <div class="col-2  nav-item navbarButtons-css"><a href="#" class="buttonLinkNav-css">Productos</a></div>
                         <div class="col-2  nav-item navbarButtons-css"><a href="#" class="buttonLinkNav-css">Sobre nosotros</a></div>
                         </div> 
-           <!-- navBar desplegable izquierdo  -->
+           <!-- offCanvas desplegable izquierdo  -->
              </nav>
             
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -62,20 +62,41 @@
         </div>
        
     </div>
-    <div class="scroll-css  d-flex justify-content-center">
-      <img src="../assets/img/tocar-left.png" class="rounded-circle iconMover-css"   alt="">
-      <div class="overflow-hidden border contentCategory-css">
-      <img src="../assets/img/calcetines.png" class="rounded-circle iconSlider-css" alt="flaticon.es/" >
-      <img src="../assets/img/falda (1).png" class="rounded-circle iconSlider-css" alt="flaticon.es/" >
-      <img src="../assets/img/vestir.png" class="rounded-circle iconSlider-css" alt="flaticon.es/" >
-      <img src="../assets/img/sudadera-con-capucha.png" class="rounded-circle iconSlider-css" alt="flaticon.es/" >
-      <img src="../assets/img/sombrero-de-pamela.png" class="rounded-circle iconSlider-css " alt="flaticon.es/" >
-      <img src="../assets/img/moda.png" class="rounded-circle iconSlider-css" alt="flaticon.es/" >
-    </div>
-      <img src="../assets/img/tocar-rigth.png" class="rounded-circle iconMover-css"  alt="">
-    </div>
-       
+   
 
+   
+<!-- carruselCategorias -->
+    <div id="carouselExampleControls" class="carousel slide scroll-css" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="contentCategory-css ">
+          <img src="../assets/img/calcetines.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/falda (1).png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/gorra.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/vestir.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/vestir.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/sombrero-de-pamela.png" class="iconSlider-css rounded-circle shadow" alt="...">
+
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="contentCategory-css">
+          <img src="../assets/img/sombrero-de-pamela.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/moda.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/pantalones.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/sombrero-de-pamela.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/sombrero-de-pamela.png" class="iconSlider-css rounded-circle shadow" alt="...">
+          <img src="../assets/img/sombrero-de-pamela.png" class="iconSlider-css rounded-circle shadow" alt="...">
+        </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+       <img src="../assets/img/tocar-left.png" class="iconMover-css" alt="">    
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+       <img src="../assets/img/tocar-rigth.png"  class="iconMover-css" alt="">
+      </button>
+    </div>
     <!-- <div>Iconos diseñados por <a href="" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div> -->
 
 
