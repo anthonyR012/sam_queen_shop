@@ -29,9 +29,11 @@ $time : 5s;
 }
 
 
-.transicionBeforeNav-css{
-  @include transition(0.5s, ease);
-  @media (min-width:1280px)  {
+.navbarPosition-css{
+
+  position: sticky;
+  top: 0;
+  @media (min-width:1300px)  {
     position: absolute;
     margin: auto;
     max-width: 1280px;

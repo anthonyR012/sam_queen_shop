@@ -5,10 +5,11 @@
   opacity: 98%;
   height: 450px; }
 
-.transicionBeforeNav-css {
-  transition: 0.5s ease; }
-  @media (min-width: 1280px) {
-    .transicionBeforeNav-css {
+.navbarPosition-css {
+  position: sticky;
+  top: 0; }
+  @media (min-width: 1300px) {
+    .navbarPosition-css {
       position: absolute;
       margin: auto;
       max-width: 1280px; } }
@@ -139,6 +140,8 @@
   width: 80px;
   height: 80px;
   background-color: #ADCED4; }
+  .iconSlider-css:hover {
+    box-shadow: -5px -5px 60px !important; }
   .iconSlider-css:active {
     transform: scale(0.5);
     transition-duration: 1.0s; }
@@ -154,7 +157,7 @@
       height: 50px; } }
 
 .iconMover-css {
-  margin-top: 80px;
+  margin-top: 68px;
   width: 30px;
   height: 30px; }
   @media (min-width: 200px) and (max-width: 600px) {
@@ -168,6 +171,7 @@
       height: 30px; } }
 
 .contentCategory-css {
+  padding-bottom: 30px;
   margin: auto;
   text-align: center; }
   @media (min-width: 200px) and (max-width: 600px) {
