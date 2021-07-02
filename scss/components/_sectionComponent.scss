@@ -6,8 +6,8 @@
     margin-bottom: 40px;
     
     &:hover{
-        transform: scale(1.4);
-        transition-duration: 1.0s;
+        transform: scale(1.2);
+        transition-duration: 1.0s; 
         
         
     }
@@ -21,6 +21,7 @@
     @extend %category;
     width: 80px ;
     height: 80px ;
+    background-color: #ADCED4;
     &:active{
         transform: scale(0.5);
         transition-duration: 1.0s;
@@ -30,6 +31,8 @@
 
         width: 30px;
         height: 30px;
+        margin-left:5px;
+        margin-right: 5px;
         
       }
       @media (min-width:600px) and (max-width:800px) {
@@ -47,6 +50,7 @@
     margin-top: 80px;
     width: 30px;
     height: 30px;
+    
     @media (min-width:200px) and (max-width:600px) {
 
         width: 15px;
@@ -75,6 +79,7 @@
         
         
       }
+    
 }
 
 

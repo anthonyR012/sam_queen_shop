@@ -21,16 +21,21 @@ $time : 5s;
 .fondoImg-css{
   background: url(../../assets/img/fondo.jpeg) blue no-repeat;
   background-size: cover;
-  opacity: 70%;
   width: 100%;
+  opacity: 98%;
   height: 450px;
-  margin-bottom: 25px;
+
   
 }
 
 
 .transicionBeforeNav-css{
   @include transition(0.5s, ease);
+  @media (min-width:1280px)  {
+    position: absolute;
+    margin: auto;
+    max-width: 1280px;
+}
   
 } 
 .transicionAfterNav-css{
@@ -85,7 +90,7 @@ $time : 5s;
           opacity: 0%;
         }
   } 
-  .container-css{
+  .containerSlogan-css{
     overflow: hidden;
     display: flex;
     width: 400px;
@@ -108,5 +113,6 @@ $time : 5s;
     }
   }
   
+ 
 
 

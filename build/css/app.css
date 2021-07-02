@@ -1,13 +1,17 @@
 .fondoImg-css {
   background: url(../../assets/img/fondo.jpeg) blue no-repeat;
   background-size: cover;
-  opacity: 70%;
   width: 100%;
-  height: 450px;
-  margin-bottom: 25px; }
+  opacity: 98%;
+  height: 450px; }
 
 .transicionBeforeNav-css {
   transition: 0.5s ease; }
+  @media (min-width: 1280px) {
+    .transicionBeforeNav-css {
+      position: absolute;
+      margin: auto;
+      max-width: 1280px; } }
 
 .transicionAfterNav-css {
   transition: 1.1s ease;
@@ -55,7 +59,7 @@
     .changeTheSlogan-css {
       opacity: 0%; } }
 
-.container-css {
+.containerSlogan-css {
   overflow: hidden;
   display: flex;
   width: 400px;
@@ -64,7 +68,7 @@
   bottom: 50%;
   margin: auto; }
   @media (min-width: 750px) and (max-width: 1280px) {
-    .container-css {
+    .containerSlogan-css {
       bottom: 56%; } }
 
 @keyframes change {
@@ -83,7 +87,7 @@
   100% {
     margin-top: 0; } }
   @media (min-width: 200px) and (max-width: 600px) {
-    .container-css {
+    .containerSlogan-css {
       height: 50px; }
     @keyframes change {
       0% {
@@ -101,7 +105,7 @@
       100% {
         margin-top: 0; } } }
   @media (min-width: 900px) and (max-width: 1300px) {
-    .container-css {
+    .containerSlogan-css {
       width: 500px; }
     @keyframes change {
       0% {
@@ -126,21 +130,24 @@
   margin-top: 60px;
   margin-bottom: 40px; }
   .iconSlider-css:hover, .iconMover-css:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
     transition-duration: 1.0s; }
   .iconSlider-css:not(:hover), .iconMover-css:not(:hover) {
     transition-duration: 1.0s; }
 
 .iconSlider-css {
   width: 80px;
-  height: 80px; }
+  height: 80px;
+  background-color: #ADCED4; }
   .iconSlider-css:active {
     transform: scale(0.5);
     transition-duration: 1.0s; }
   @media (min-width: 200px) and (max-width: 600px) {
     .iconSlider-css {
       width: 30px;
-      height: 30px; } }
+      height: 30px;
+      margin-left: 5px;
+      margin-right: 5px; } }
   @media (min-width: 600px) and (max-width: 800px) {
     .iconSlider-css {
       width: 50px;
@@ -170,4 +177,5 @@
 body {
   max-width: 1300px;
   height: 1500px;
-  margin: auto; }
+  margin: auto;
+  background-color: #2398AF; }
