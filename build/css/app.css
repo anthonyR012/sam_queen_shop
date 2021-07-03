@@ -14,11 +14,6 @@
       margin: auto;
       max-width: 1280px; } }
 
-.transicionAfterNav-css {
-  transition: 1.1s ease;
-  font-size: 18px;
-  background-color: #02ACF9; }
-
 .buttonLinkNav-css {
   text-decoration: none;
   color: white;
@@ -27,8 +22,15 @@
   justify-content: center; }
   .buttonLinkNav-css:hover {
     color: #F98302;
-    -webkit-transform: scale(1.2);
+    font-size: medium;
+    transform: scale(1.2);
     transition-duration: 1.0s; }
+    .buttonLinkNav-css:hover:active {
+      transform: scale(1);
+      transition-duration: 1.0s; }
+  .buttonLinkNav-css:not(:hover) {
+    transform: none;
+    transition-duration: 0.5s; }
 
 .navbarButtons-css {
   margin-top: 15px;
@@ -177,6 +179,17 @@
   @media (min-width: 200px) and (max-width: 600px) {
     .contentCategory-css {
       height: 180px; } }
+
+.transitionBefore-css {
+  transition-duration: 0.2s;
+  background-color: #266b76; }
+
+.transitionAfter-css {
+  transition-duration: 0.6s;
+  background-color: #266b76; }
+
+.withoutAnimation-css {
+  transition-duration: 0.5s; }
 
 body {
   max-width: 1300px;
