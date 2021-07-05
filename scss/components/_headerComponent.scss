@@ -79,12 +79,16 @@
     }
 }
 .logoSam-css{
-    margin-left: 5px;
+    
+  
+  margin-left: 5px;
     width:60px  !important ;
     animation:logo 4s infinite;
     @keyframes logo {
       30% { transform: scale(1.2);}
     }
+
+    
  }    
  
  .changeTheSlogan-css{
@@ -142,6 +146,15 @@
     overflow:hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
+  }
+}
+
+.activeDesplegable-css{
+
+  visibility: hidden;
+  @media (min-width:0px) and (max-width:767px) {
+   visibility: visible;
+
   }
 }
 

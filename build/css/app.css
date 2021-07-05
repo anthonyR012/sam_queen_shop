@@ -144,6 +144,12 @@
       white-space: nowrap;
       text-overflow: ellipsis; } }
 
+.activeDesplegable-css {
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .activeDesplegable-css {
+      visibility: visible; } }
+
 .iconSlider-css, .iconMover-css {
   cursor: pointer;
   margin-right: 20px;
@@ -213,4 +219,5 @@ body {
   max-width: 1300px;
   height: 1500px;
   margin: auto;
-  background-color: #2398AF; }
+  background-color: #2398AF;
+  overflow-x: hidden; }

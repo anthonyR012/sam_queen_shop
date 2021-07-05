@@ -1,31 +1,59 @@
 // VARIABLES
 const aplicationAnimacionScrollCategory :Element|null = document.querySelector(".sticky-top");
 const colorClickDesplegable = document.querySelector(".activeDesplegable-css");
+const categoryCarrusel = document.querySelector("#carouselExampleControls");
+
+
 
 // INICIO
 eventListners();
 function eventListners(){
- colorClickDesplegable?.addEventListener("click", clickAtDesplegable);
+
  window.addEventListener("scroll", positionScroll);
-
-
-
+ document.onclick = eventsClickDocuments;
   
 }
   // FUNCIONES
 
+function eventsClickDocuments(e:any){
+  const clickState = e.target.classList;
+
+  if(clickState.contains("logoSam-css")){
+    
+    clickCategorySliderState(1)
+
+  }else if(clickState.contains("btn-close") || e.target.classList.contains("modal-backdrop")){
+    
+    clickCategorySliderState(0)
+
+  }else if(clickState.contains("activeDesplegable-css")){
+    clickAtDesplegable();
+  }
+
+}
+  
+function clickCategorySliderState(e:number){
+
+  if(e == 1){
+    categoryCarrusel?.setAttribute("style", "opacity:0;transition-duration:0.2s;visibility:hidden");
+  }else{
+    categoryCarrusel?.setAttribute("style", "opacity:100;transition-duration:3s;visibility:visible");
+  }
+}
+
   function clickAtDesplegable(){
     const objectColorHeader :Element|null = document.querySelector(".navbarPosition-css");
-    const colorFondo = window.getComputedStyle(objectColorHeader!!).backgroundColor;
+    const colorFondoState = window.getComputedStyle(objectColorHeader!!).backgroundColor;
 
-    if(objectColorHeader && colorFondo == "rgba(0, 0, 0, 0)"){
+    if(objectColorHeader && colorFondoState == "rgba(0, 0, 0, 0)"){
         objectColorHeader.setAttribute("style", "background-color:#266b76;transition-duration:1s");
 
         colorClickDesplegable?.classList.add("disabled");
+        
         sloganOpacoHeader(1);
         setTimeout(() => {
           colorClickDesplegable?.classList.remove("disabled");
-          console.log(colorClickDesplegable)
+          
         }, 1000);
 
 

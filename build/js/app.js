@@ -2,23 +2,43 @@
 // VARIABLES
 var aplicationAnimacionScrollCategory = document.querySelector(".sticky-top");
 var colorClickDesplegable = document.querySelector(".activeDesplegable-css");
+var categoryCarrusel = document.querySelector("#carouselExampleControls");
 // INICIO
 eventListners();
 function eventListners() {
-    colorClickDesplegable === null || colorClickDesplegable === void 0 ? void 0 : colorClickDesplegable.addEventListener("click", clickAtDesplegable);
     window.addEventListener("scroll", positionScroll);
+    document.onclick = eventsClickDocuments;
 }
 // FUNCIONES
+function eventsClickDocuments(e) {
+    var clickState = e.target.classList;
+    if (clickState.contains("logoSam-css")) {
+        clickCategorySliderState(1);
+    }
+    else if (clickState.contains("btn-close") || e.target.classList.contains("modal-backdrop")) {
+        clickCategorySliderState(0);
+    }
+    else if (clickState.contains("activeDesplegable-css")) {
+        clickAtDesplegable();
+    }
+}
+function clickCategorySliderState(e) {
+    if (e == 1) {
+        categoryCarrusel === null || categoryCarrusel === void 0 ? void 0 : categoryCarrusel.setAttribute("style", "opacity:0;transition-duration:0.2s;visibility:hidden");
+    }
+    else {
+        categoryCarrusel === null || categoryCarrusel === void 0 ? void 0 : categoryCarrusel.setAttribute("style", "opacity:100;transition-duration:3s;visibility:visible");
+    }
+}
 function clickAtDesplegable() {
     var objectColorHeader = document.querySelector(".navbarPosition-css");
-    var colorFondo = window.getComputedStyle(objectColorHeader).backgroundColor;
-    if (objectColorHeader && colorFondo == "rgba(0, 0, 0, 0)") {
+    var colorFondoState = window.getComputedStyle(objectColorHeader).backgroundColor;
+    if (objectColorHeader && colorFondoState == "rgba(0, 0, 0, 0)") {
         objectColorHeader.setAttribute("style", "background-color:#266b76;transition-duration:1s");
         colorClickDesplegable === null || colorClickDesplegable === void 0 ? void 0 : colorClickDesplegable.classList.add("disabled");
         sloganOpacoHeader(1);
         setTimeout(function () {
             colorClickDesplegable === null || colorClickDesplegable === void 0 ? void 0 : colorClickDesplegable.classList.remove("disabled");
-            console.log(colorClickDesplegable);
         }, 1000);
     }
     else if (objectColorHeader) {
