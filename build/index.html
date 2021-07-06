@@ -18,29 +18,34 @@
         <div class=" fondoImg-css shadow-lg ">
         
              <nav class="navbar navbar-expand-md navbar-light navbarPosition-css " >
-
-              <a class="navbar-brand  col-1 " href="#"><img src="../assets/icon/icon-logo.png" class="logoSam-css " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" alt="logo"></a>
+            
+              <img src="../assets/icon/icon-menuIzquierdo.png" alt="DesplegarMenuIzquierdo" class="logoMenuIzquierdo-css" role="button" aria-controls="offcanvasExample" data-bs-toggle="offcanvas" href="#offcanvasExample">
+              <a href="#">
+              <img src="../assets/icon/icon-logo.png" class="logoSam-css "    alt="logo"></a>
               <button class="btn btn-lg activeDesplegable-css" tabindex="-1" role="button" aria-disabled="true" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <img src="../assets/icon/icon-desplegable.png " class="activeDesplegable-css"  alt="desplegar" ></button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                  
-                        <div class="col-2  nav-item navbarButtons-css"><a href="#" class="buttonLinkNav-css " >Inicio</a></div>
-                        <div class="col-2  nav-item navbarButtons-css"><a href="#" class="buttonLinkNav-css">Productos</a></div>
+                        <div class="col-1  nav-item navbarButtons-css"><a href="#" class="buttonLinkNav-css " >Inicio</a></div>
+                        <div class="col-1  nav-item navbarButtons-css"><a href="#" class="buttonLinkNav-css">Productos</a></div>
                         <div class="col-2  nav-item navbarButtons-css"><a href="#" class="buttonLinkNav-css">Sobre nosotros</a></div>
                         <div class="inputSearch-css col-4">
                           <button class="btn btn-dark" type="button" id="button-addon1">Buscar</button>
                           <input type="text" class="form-control boxInput-css" placeholder="Encuentre su producto" aria-label="Example text with button addon" aria-describedby="button-addon1">
                         </div>
-                       
-                        </div> 
+                      </div>
+                      
+                </nav>
            <!-- offCanvas desplegable izquierdo  -->
-             </nav>
             
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+             
+            <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <img src="../assets/icon/icon-favicon.png" class="logoSam-css " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" alt="logo">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span class="letter-css">Q</span>ueen</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
+              <hr>
               <div class="offcanvas-body">
                 <div>
                   Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
@@ -55,6 +60,26 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </div>
+
+                <div class="contentRedes-css">
+                  
+                  
+                    
+                    <a href="https://www.facebook.com/SamQueen17/?ref=pages_you_manage" target="_blank"><img src="../assets/icon/faccebook.png" alt="faccebook" class="redes-css"></a>
+                    <a href="https://www.instagram.com/sam_queen17/" target="_blank"><img class="redes-css" src="../assets/icon/instagram.png" alt="Instagram"></a>
+                    <a href="https://wa.me/3185796295" target="_blank"><img src="../assets/icon/whatsUp.png" class="redes-css" alt="whatsapp"></a>
+                    <div class="align-text-top contentServices-css">
+                      <a href="#" class="d-block">Contactanos</a>
+                      <a href="#" class="d-block">Soporte Tecnico</a>
+                    </div>
+                </div>
+                <footer>
+                  © 2021 Sam Colombia | Todos los derechos reservados.
+                  Textiles Colombia S.A.S.
+                  NIT 900.455.25.0. 
+                  Teléfono (57)456850. 
+                  Dirección: Calle 76a#28, Cali Colombia. 
+                </footer>
               </div>
             </div>
             
@@ -194,9 +219,11 @@
 
     </div>
     </div>
-    <!-- <div>Iconos diseñados por <a href="" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div> -->
+ 
 
+    <footer class="container bg-info text-dark">
 
+    </footer>
     
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

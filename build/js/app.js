@@ -2,7 +2,7 @@
 // VARIABLES
 var aplicationAnimacionScrollCategory = document.querySelector(".sticky-top");
 var colorClickDesplegable = document.querySelector(".activeDesplegable-css");
-var categoryCarrusel = document.querySelector("#carouselExampleControls");
+var categoryCarrusel = document.querySelector(".sticky-top");
 // INICIO
 eventListners();
 function eventListners() {
@@ -12,7 +12,7 @@ function eventListners() {
 // FUNCIONES
 function eventsClickDocuments(e) {
     var clickState = e.target.classList;
-    if (clickState.contains("logoSam-css")) {
+    if (clickState.contains("logoMenuIzquierdo-css")) {
         clickCategorySliderState(1);
     }
     else if (clickState.contains("btn-close") || e.target.classList.contains("modal-backdrop")) {
@@ -34,7 +34,7 @@ function clickAtDesplegable() {
     var objectColorHeader = document.querySelector(".navbarPosition-css");
     var colorFondoState = window.getComputedStyle(objectColorHeader).backgroundColor;
     if (objectColorHeader && colorFondoState == "rgba(0, 0, 0, 0)") {
-        objectColorHeader.setAttribute("style", "background-color:#266b76;transition-duration:1s");
+        objectColorHeader.setAttribute("style", "background-color:#266b76;transition-duration:0.5s");
         colorClickDesplegable === null || colorClickDesplegable === void 0 ? void 0 : colorClickDesplegable.classList.add("disabled");
         sloganOpacoHeader(1);
         setTimeout(function () {
@@ -49,10 +49,10 @@ function clickAtDesplegable() {
 function sloganOpacoHeader(param) {
     var slogan = document.querySelector(".containerSlogan-css");
     if (param == 1 && slogan) {
-        slogan.setAttribute("style", "opacity:0;transition-duration:0.2s");
+        slogan.setAttribute("style", "opacity:0");
     }
     else if (slogan) {
-        slogan.setAttribute("style", "opacity:100;transition-duration:0.5s");
+        slogan.setAttribute("style", "opacity:100");
     }
 }
 function positionScroll() {

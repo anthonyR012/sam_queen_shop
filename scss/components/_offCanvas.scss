@@ -1,0 +1,26 @@
+.offcanvas{
+    background-color: aliceblue;
+}
+.offcanvas-title{
+    position:absolute;
+    left: 75px;
+}
+.letter-css{
+    font-size: 40px;
+}
+.redes-css{
+
+    margin-top: 50px;
+    width: 70px;
+    @media (max-width:300px) {
+        width: 50px;
+    }
+   
+    
+}
+.contentRedes-css{
+    display: inline-flex;
+}
+.contentServices-css{
+    margin-top: 55px;
+}
