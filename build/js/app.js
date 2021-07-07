@@ -27,7 +27,7 @@ function clickCategorySliderState(e) {
         categoryCarrusel === null || categoryCarrusel === void 0 ? void 0 : categoryCarrusel.setAttribute("style", "opacity:0;transition-duration:0.2s;visibility:hidden");
     }
     else {
-        categoryCarrusel === null || categoryCarrusel === void 0 ? void 0 : categoryCarrusel.setAttribute("style", "opacity:100;transition-duration:3s;visibility:visible");
+        categoryCarrusel === null || categoryCarrusel === void 0 ? void 0 : categoryCarrusel.setAttribute("style", "opacity:100;visibility:visible");
     }
 }
 function clickAtDesplegable() {

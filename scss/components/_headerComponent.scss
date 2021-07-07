@@ -147,15 +147,18 @@
     width: 280px;
     margin-left: 0;
   }
+  @media (min-width:765px) and (max-width:985px) {
+  
+   position: absolute;
+   left: 70px;
+   width: 300px;
+   top: 75px;   
+  }
   
 }
 .boxInput-css{
   background-color: aliceblue;
-  @media (min-width:765px) and (max-width:790px) {
-    overflow:hidden;
-    white-space:nowrap;
-    text-overflow: ellipsis;
-  }
+  
 }
 
 .activeDesplegable-css{

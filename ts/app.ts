@@ -37,7 +37,7 @@ function clickCategorySliderState(e:number){
   if(e == 1){
     categoryCarrusel?.setAttribute("style", "opacity:0;transition-duration:0.2s;visibility:hidden");
   }else{
-    categoryCarrusel?.setAttribute("style", "opacity:100;transition-duration:3s;visibility:visible");
+    categoryCarrusel?.setAttribute("style", "opacity:100;visibility:visible");
   }
 }
 
@@ -111,8 +111,8 @@ function clickCategorySliderState(e:number){
            
                 aplicationAnimacionScrollHeader?.classList.remove("transitionBefore-css");
                   aplicationAnimacionScrollCategory?.classList.remove("transitionAfter-css");
-                  aplicationAnimacionScrollHeader?.classList.add("withoutAnimation-css");
-                  aplicationAnimacionScrollCategory?.classList.add("withoutAnimation-css");
+                   aplicationAnimacionScrollHeader?.classList.add("withoutAnimation-css");
+                   aplicationAnimacionScrollCategory?.classList.add("withoutAnimation-css");
                   
               }
           }
