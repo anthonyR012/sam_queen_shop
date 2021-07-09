@@ -30,6 +30,7 @@
 .navbarPosition-css{
   
   position: sticky;
+  z-index: 10;
   top: 0; 
   @media (min-width:1300px)  {
     position: absolute;
@@ -81,15 +82,16 @@
 %logoSamMenu{
   
     width:60px ;
-    animation:logo 4s infinite;
-    @keyframes logo {
-      30% { transform: scale(1.2);}
-    }
+   
+   
+}
+@keyframes logo {
+  30% { transform: scale(1.2);}
 }
 .logoSam-css{
     
   @extend %logoSamMenu;
-
+  animation:logo 4s infinite;
     
  }    
 .logoMenuIzquierdo-css{
@@ -99,7 +101,7 @@
   margin-right: 15px;
   width: 30px;
 }
- 
+
  .changeTheSlogan-css{
         
         color: white;
@@ -118,6 +120,7 @@
     width: 400px;
     height:60px;
     position: absolute;
+    z-index: 1;
     bottom: 50%;
     margin: auto;
     @media (min-width :750px) and (max-width: 1280px){

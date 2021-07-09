@@ -50,7 +50,7 @@ function clickCategorySliderState(e:number){
 
         colorClickDesplegable?.classList.add("disabled");
         
-        sloganOpacoHeader(1);
+        
         setTimeout(() => {
           colorClickDesplegable?.classList.remove("disabled");
           
@@ -59,26 +59,19 @@ function clickCategorySliderState(e:number){
 
     }else if(objectColorHeader){
       objectColorHeader.setAttribute("style", "background-color:none;transition-duration:0.5s");
-      sloganOpacoHeader(0);
+     
     }
     
 
   }
 
 
-  function sloganOpacoHeader(param: number){
-    const slogan:Element|null = document.querySelector(".containerSlogan-css");
-    if(param == 1 && slogan){
-      slogan.setAttribute("style", "opacity:0");
-    }else if(slogan){
-      slogan.setAttribute("style", "opacity:100");
-    }
-  }
+
 
   function positionScroll(){    
 
     const ubication: DOMRect = aplicationAnimacionScrollCategory!!.getBoundingClientRect();
-          if(ubication.top < 110){
+          if(ubication.top < 150){
             
             animationHeader(true);
           }else{

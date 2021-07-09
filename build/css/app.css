@@ -7,6 +7,7 @@
 
 .navbarPosition-css {
   position: sticky;
+  z-index: 10;
   top: 0; }
   @media (min-width: 1300px) {
     .navbarPosition-css {
@@ -43,12 +44,14 @@
     border-bottom: 5px solid; }
 
 .logoSam-css, .logoMenuIzquierdo-css {
-  width: 60px;
-  animation: logo 4s infinite; }
+  width: 60px; }
 
 @keyframes logo {
   30% {
     transform: scale(1.2); } }
+
+.logoSam-css {
+  animation: logo 4s infinite; }
 
 .logoMenuIzquierdo-css {
   margin-left: 20px;
@@ -72,6 +75,7 @@
   width: 400px;
   height: 60px;
   position: absolute;
+  z-index: 1;
   bottom: 50%;
   margin: auto; }
   @media (min-width: 750px) and (max-width: 1280px) {
@@ -227,11 +231,6 @@ body {
   background-color: #2398AF;
   overflow-x: hidden; }
 
-.img-responsive {
-  width: 500px;
-  height: 300px;
-  opacity: 80%; }
-
 .listRemove-css {
   list-style: none; }
   .listRemove-css::before {
@@ -253,6 +252,7 @@ body {
   color: white; }
 
 .subTitle-css {
+  z-index: 100;
   font-size: 30px;
   color: white;
   opacity: 90%;
@@ -265,8 +265,60 @@ body {
     content: "  " url("../../assets/icon/icon-productos.png");
     width: min-content; }
 
+.containerLateral-css {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.img-responsive {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px; }
+  @media (min-width: 300px) and (max-width: 768px) {
+    .img-responsive {
+      margin-left: 10px;
+      width: 300px;
+      height: 300px; } }
+  @media (max-width: 290px) {
+    .img-responsive {
+      margin-left: 0;
+      width: 200px;
+      height: 200px; } }
+
+.iconPrecio-css {
+  font-size: 25px; }
+  .iconPrecio-css::before {
+    content: url("../../assets/icon/icon-precios.png"); }
+
+.iconSedes-css {
+  font-size: 25px; }
+  .iconSedes-css::before {
+    content: url("../../assets/icon/icon-sedes.png"); }
+
+.iconForo-css {
+  font-size: 25px; }
+  .iconForo-css::before {
+    content: url("../../assets/icon/icon-foro.png"); }
+
+.iconEsperar-css {
+  font-size: 25px; }
+  .iconEsperar-css::before {
+    content: url("../../assets/icon/icon-esperar.png"); }
+
+.iconCategorias-css {
+  font-size: 25px; }
+  .iconCategorias-css::before {
+    content: url("../../assets/icon/icon-categoria.png"); }
+
+.iconSeguridad-css {
+  font-size: 25px; }
+  .iconSeguridad-css::before {
+    content: url("../../assets/icon/icon-seguridad.png"); }
+
 .offcanvas {
-  background-color: aliceblue; }
+  background-color: aliceblue;
+  position: absolute;
+  border-radius: 5px;
+  height: 600px; }
 
 .offcanvas-title {
   position: absolute;
@@ -287,3 +339,7 @@ body {
 
 .contentServices-css {
   margin-top: 55px; }
+
+.imgInformacion-css {
+  width: 90px;
+  height: 80px; }

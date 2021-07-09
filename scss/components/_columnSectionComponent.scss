@@ -1,0 +1,92 @@
+
+.listRemove-css{
+    list-style: none;
+    &::before{
+        content: url("../../assets/icon/icon-good.png");
+    }
+}
+.containerList-css{
+
+    padding: 40px;
+    background-color: #97BCBC ;
+    opacity: 80%;
+}
+.containerSection-css{
+    
+    background:url("../../assets/img/Rectangle.png") ;
+    
+    padding-bottom: 25px;
+    padding-top: 35px;
+    padding-left: 25px;
+
+}
+.titleSection-css{
+    font-size: 25px;
+    color: white;
+}
+.subTitle-css{
+    z-index: 100;
+    font-size: 30px;
+    color: white;
+    opacity: 90%;
+    text-shadow: 4px 0px 5px black;  
+
+}
+.titlePrincipal-css{
+    &::after{
+        content: "  "url("../../assets/icon/icon-productos.png");
+        width: min-content;
+    }
+    
+    font-weight: bold !important;
+    font-size: 40px;
+}
+
+
+// CODE LATERAL SECTION
+.containerLateral-css{
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+.img-responsive{
+  
+    width: 400px;
+    height: 400px;
+    margin-left:100px;
+    @media (min-width:300px) and (max-width: 768px) {
+        margin-left: 10px;
+        width: 300px;
+        height: 300px;
+    }
+    @media (max-width:290px) {
+        margin-left: 0;
+        width: 200px;
+        height: 200px;
+    }
+   
+}
+@mixin iconSection($img) {
+    &::before{
+        content: url("../../assets/icon/"+$img);
+   }
+   font-size: 25px;
+}
+.iconPrecio-css{
+    @include iconSection("icon-precios.png");
+}
+
+.iconSedes-css{
+    @include iconSection("icon-sedes.png");
+}
+.iconForo-css{
+    @include iconSection("icon-foro.png");
+}
+.iconEsperar-css{
+    @include iconSection("icon-esperar.png");
+}
+.iconCategorias-css{
+    @include iconSection("icon-categoria.png");
+}
+.iconSeguridad-css{
+    @include iconSection("icon-seguridad.png");
+}

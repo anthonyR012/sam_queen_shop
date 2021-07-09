@@ -36,28 +36,17 @@ function clickAtDesplegable() {
     if (objectColorHeader && colorFondoState == "rgba(0, 0, 0, 0)") {
         objectColorHeader.setAttribute("style", "background-color:#266b76;transition-duration:0.5s");
         colorClickDesplegable === null || colorClickDesplegable === void 0 ? void 0 : colorClickDesplegable.classList.add("disabled");
-        sloganOpacoHeader(1);
         setTimeout(function () {
             colorClickDesplegable === null || colorClickDesplegable === void 0 ? void 0 : colorClickDesplegable.classList.remove("disabled");
         }, 1000);
     }
     else if (objectColorHeader) {
         objectColorHeader.setAttribute("style", "background-color:none;transition-duration:0.5s");
-        sloganOpacoHeader(0);
-    }
-}
-function sloganOpacoHeader(param) {
-    var slogan = document.querySelector(".containerSlogan-css");
-    if (param == 1 && slogan) {
-        slogan.setAttribute("style", "opacity:0");
-    }
-    else if (slogan) {
-        slogan.setAttribute("style", "opacity:100");
     }
 }
 function positionScroll() {
     var ubication = aplicationAnimacionScrollCategory.getBoundingClientRect();
-    if (ubication.top < 110) {
+    if (ubication.top < 150) {
         animationHeader(true);
     }
     else {
