@@ -1,0 +1,32 @@
+.cartilla-css{
+  background-color: #266b76;
+  margin-bottom:35px;
+    @media (min-width: 768px) {
+        height: 420px;
+   
+    }
+    @media (min-width: 528px) and (max-width:767px) {
+        margin: auto;
+        margin-bottom: 35px;
+        width: 450px;
+   
+    }
+    &:hover{
+        transform: scale(1.02);
+        transition-duration: 1.0s;  
+        box-shadow: -1px 1px 10px 2px;
+    }
+    &:not(:hover){
+        transform: scale(0.95);
+        transition-duration: 1.0s;  
+    }
+   
+}
+
+.card-title{
+    font-size: 22px;
+}
+.card-text{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}

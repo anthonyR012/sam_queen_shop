@@ -42,7 +42,10 @@
     font-size: 40px;
 }
 
-
+.textWords-css{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
 // CODE LATERAL SECTION
 .containerLateral-css{
     margin-top:40px;
@@ -50,14 +53,20 @@
 }
 .img-responsive{
   
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     margin-left:100px;
-    @media (min-width:300px) and (max-width: 768px) {
+    @media (min-width:768px) and (max-width: 977px) {
         margin-left: 10px;
         width: 300px;
         height: 300px;
+    } 
+    @media (min-width:283px) and (max-width: 650px) {
+        margin-left: 10px;
+        width: 280px;
+        height: 280px;
     }
+    
     @media (max-width:290px) {
         margin-left: 0;
         width: 200px;
@@ -89,4 +98,18 @@
 }
 .iconSeguridad-css{
     @include iconSection("icon-seguridad.png");
+}
+.textSection-css{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    
+}
+.service-box-css{
+    
+    padding: 3px;
+    margin: auto;
+}
+.service-desc-css{
+    text-align: center;
+
 }

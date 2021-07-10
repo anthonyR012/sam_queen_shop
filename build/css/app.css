@@ -225,7 +225,7 @@
   transition-duration: 0.2s; }
 
 body {
-  max-width: 1300px;
+  max-width: 1800px;
   height: 1500px;
   margin: auto;
   background-color: #2398AF;
@@ -265,19 +265,28 @@ body {
     content: "  " url("../../assets/icon/icon-productos.png");
     width: min-content; }
 
+.textWords-css {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px; }
+
 .containerLateral-css {
   margin-top: 40px;
   margin-bottom: 40px; }
 
 .img-responsive {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   margin-left: 100px; }
-  @media (min-width: 300px) and (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 977px) {
     .img-responsive {
       margin-left: 10px;
       width: 300px;
       height: 300px; } }
+  @media (min-width: 283px) and (max-width: 650px) {
+    .img-responsive {
+      margin-left: 10px;
+      width: 280px;
+      height: 280px; } }
   @media (max-width: 290px) {
     .img-responsive {
       margin-left: 0;
@@ -314,6 +323,17 @@ body {
   .iconSeguridad-css::before {
     content: url("../../assets/icon/icon-seguridad.png"); }
 
+.textSection-css {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px; }
+
+.service-box-css {
+  padding: 3px;
+  margin: auto; }
+
+.service-desc-css {
+  text-align: center; }
+
 .offcanvas {
   background-color: aliceblue;
   position: absolute;
@@ -343,3 +363,33 @@ body {
 .imgInformacion-css {
   width: 90px;
   height: 80px; }
+
+.container-foot {
+  height: 130px;
+  background-color: #97BCBC; }
+
+.cartilla-css {
+  background-color: #266b76;
+  margin-bottom: 35px; }
+  @media (min-width: 768px) {
+    .cartilla-css {
+      height: 420px; } }
+  @media (min-width: 528px) and (max-width: 767px) {
+    .cartilla-css {
+      margin: auto;
+      margin-bottom: 35px;
+      width: 450px; } }
+  .cartilla-css:hover {
+    transform: scale(1.02);
+    transition-duration: 1.0s;
+    box-shadow: -1px 1px 10px 2px; }
+  .cartilla-css:not(:hover) {
+    transform: scale(0.95);
+    transition-duration: 1.0s; }
+
+.card-title {
+  font-size: 22px; }
+
+.card-text {
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif; }
