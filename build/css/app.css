@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 .fondoImg-css {
   background: url(../../assets/img/banner.png) blue no-repeat;
   background-size: cover;
@@ -63,73 +63,43 @@
     .changeTheSlogan-css {
       opacity: 0%; } }
 
-.sloganLetter-css {
-  font-family: 'Tourney', cursive; }
-
 .containerSlogan-css {
-  overflow: hidden;
-  display: flex;
-  width: 400px;
-  height: 60px;
   position: absolute;
   z-index: 1;
-  bottom: 50%;
-  margin: auto; }
-  @media (min-width: 750px) and (max-width: 1280px) {
-    .containerSlogan-css {
-      bottom: 56%; } }
+  top: 250px;
+  left: 25px;
+  min-height: 6vh; }
 
-@keyframes change {
-  0% {
-    margin-top: 0; }
-  20% {
-    margin-top: 0; }
-  50% {
-    margin-top: -60px; }
-  80% {
-    margin-top: -115px; }
-  85% {
-    margin-top: -55px; }
-  95% {
-    margin-top: -60px; }
-  100% {
-    margin-top: 0; } }
-  @media (min-width: 200px) and (max-width: 600px) {
-    .containerSlogan-css {
-      height: 50px; }
-    @keyframes change {
-      0% {
-        margin-top: 0; }
-      20% {
-        margin-top: 0; }
-      50% {
-        margin-top: -45px; }
-      80% {
-        margin-top: -100px; }
-      85% {
-        margin-top: -50px; }
-      95% {
-        margin-top: -45px; }
-      100% {
-        margin-top: 0; } } }
-  @media (min-width: 900px) and (max-width: 1300px) {
-    .containerSlogan-css {
-      width: 500px; }
-    @keyframes change {
-      0% {
-        margin-top: 0; }
-      20% {
-        margin-top: 0; }
-      50% {
-        margin-top: -62px; }
-      80% {
-        margin-top: -131px; }
-      85% {
-        margin-top: -65px; }
-      95% {
-        margin-top: -70px; }
-      100% {
-        margin-top: 0; } } }
+.containerSlogan-css span {
+  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
+  position: relative;
+  font-size: 5vh;
+  opacity: 80%;
+  cursor: pointer; }
+  @media (min-width: 300px) {
+    .containerSlogan-css span::before {
+      content: var(--l);
+      position: absolute;
+      transform: scale(1.1);
+      filter: blur(70px);
+      top: 25px; }
+    .containerSlogan-css span::after {
+      content: var(--l);
+      position: absolute;
+      left: 0;
+      filter: blur(30px);
+      transform: rotateX(50deg); } }
+  .containerSlogan-css span:hover {
+    filter: contrast(150%); }
+  .containerSlogan-css span:nth-child(1) {
+    color: #09F4E8; }
+  .containerSlogan-css span:nth-child(2) {
+    color: #09F4E8; }
+  .containerSlogan-css span:nth-child(3) {
+    color: #09F4E8; }
+  .containerSlogan-css span:nth-child(4) {
+    color: #09F4E8; }
 
 .inputSearch-css {
   display: flex;

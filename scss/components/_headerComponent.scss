@@ -1,16 +1,4 @@
-@mixin slogan ($margin20,$margin50,$margin80,$margin85,$margin95) {
-  
-  @keyframes change {
-    
-    0%{ margin-top: 0;  }
-  20%{ margin-top: #{$margin20};}
-  50% { margin-top: #{$margin50};}
-  80% { margin-top: #{$margin80};}
-  85% { margin-top: #{$margin85};}
-  95% { margin-top: #{$margin95};}
-100% { margin-top: 0;}
-  }
-}
+
 
 @mixin transition($time, $efect) {
   transition: $time $efect;
@@ -116,38 +104,58 @@
         }
   } 
 
-  @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap');
-  .sloganLetter-css{
-    font-family: 'Tourney', cursive;
-    // @if(){
-    //   opacity: 0;
-    // }@else{
-    //   opacity: 100%;
-    // }
-  }
-
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
   .containerSlogan-css{
-    overflow: hidden;
-    display: flex;
-    width: 400px;
-    height:60px;
+   
     position: absolute;
     z-index: 1;
-    bottom: 50%;
-    margin: auto;
-    @media (min-width :750px) and (max-width: 1280px){
-      bottom: 56%;
-    }
-    @include slogan(0,-60px,-115px,-55px,-60px);
-    @media (min-width :200px) and (max-width: 600px){
-      height: 50px;
-      @include slogan(0,-45px,-100px,-50px,-45px);
-    }
-    @media (min-width :900px ) and (max-width: 1300px) {
-      width: 500px;
+    top: 250px;
+    left: 25px;
+    min-height: 6vh;
+   
+  }
+  .containerSlogan-css span{
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    position: relative;
+    font-size: 5vh;
+    opacity: 80%;
+    cursor: pointer;
+    @media (min-width:300px) {
+      
+    
+    &::before{
+        content: var(--l);
+        position: absolute;
+        transform: scale(1.1);
+        filter: blur(70px);
+        top: 25px;
 
-      @include slogan(0,-62px,-131px,-65px,-70px);
+    }
+    &::after{
+      content: var(--l);
+      position: absolute;
+      
+      left: 0;
+      filter: blur(30px);
+      transform: rotateX(50deg);
+    }
+  }
+    &:hover{
+      filter: contrast(150%);
+    }
+    &:nth-child(1){
+      color: #09F4E8  ;
+    }
+    &:nth-child(2){
+      color: #09F4E8  ;
+    }
+    &:nth-child(3){
+      color: #09F4E8  ;
+    }
+    &:nth-child(4){
+      color: #09F4E8;
     }
   }
   
