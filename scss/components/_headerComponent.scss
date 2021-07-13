@@ -91,74 +91,7 @@
   width: 30px;
 }
 
- .changeTheSlogan-css{
-        
-        color: white;
-        text-shadow: 5px 2px 3px black;       
-        margin: 0;    
-        padding: 10px;  
-        animation: change 7.8s infinite;
-        text-align: center;
-        @media (min-width:1300px) {
-          opacity: 0%;
-        }
-  } 
 
-  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-  .containerSlogan-css{
-   
-    position: absolute;
-    z-index: 1;
-    top: 250px;
-    left: 25px;
-    min-height: 6vh;
-   
-  }
-  .containerSlogan-css span{
-    font-family: 'Fredoka One', cursive;
-    font-weight: bold;
-    position: relative;
-    font-size: 5vh;
-    opacity: 80%;
-    cursor: pointer;
-    @media (min-width:300px) {
-      
-    
-    &::before{
-        content: var(--l);
-        position: absolute;
-        transform: scale(1.1);
-        filter: blur(70px);
-        top: 25px;
-
-    }
-    &::after{
-      content: var(--l);
-      position: absolute;
-      
-      left: 0;
-      filter: blur(30px);
-      transform: rotateX(50deg);
-    }
-  }
-    &:hover{
-      filter: contrast(150%);
-    }
-    &:nth-child(1){
-      color: #09F4E8  ;
-    }
-    &:nth-child(2){
-      color: #09F4E8  ;
-    }
-    &:nth-child(3){
-      color: #09F4E8  ;
-    }
-    &:nth-child(4){
-      color: #09F4E8;
-    }
-  }
-  
  
 .inputSearch-css{
   display: flex;
